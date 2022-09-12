@@ -1,0 +1,21 @@
+<%= form_with model: article do |f| %>
+  <div>
+      <%= f.label :title, "Título del artículo" %>
+      <%= f.text_area :title %>
+
+      <% article.errors.full_messages_for(:title).each do |message| %>
+        <div><%= message %></div>
+      <% end %>
+
+      <%= f.label :content, "Describe tu artículo" %>
+      <%= f.text_area :content %>
+
+      <% article.errors.full_messages_for(:content).each do |message| %>
+        <div><%= message %></div>
+      <% end %>    
+  </div>
+
+  <div>
+    <%= f.submit "Nuevo post" %>
+  </div>
+<% end %>
