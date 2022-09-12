@@ -1,24 +1,8 @@
-# README
+# README Ej 1 individual Bootcamp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In order to use this app you have to have Ruby 3.1.2 and Rails 7.0.3 installed on your machine. 
+All the gems necesary are in the GemFile, so you have to do `bundle install` on the root of the project to have it installed. 
 
-Things you may want to cover:
+Once you have run the `bundle install` you have to run `rails db:create db:migrate db:seed` to have a populated database of the project
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To see it in you local machine you have to run a puma server using `rails server`
